@@ -6,13 +6,13 @@
         {
             SinglyLinkedList<int> list = new SinglyLinkedList<int>(1);
 
-            list.InsertAtEnd(2);
+            list.AddToEnd(2);
 
-            list.InsertAtEnd(3);
+            list.AddToEnd(3);
 
-            list.InsertAtBeginning(0);
+            list.Add(0);
 
-            list.InsertAtPosition(5, 2);
+            list.AddAt(5, 2);
 
             Console.WriteLine(list.ToString());
 
@@ -20,7 +20,7 @@
 
             list.DeleteByValue(6);
 
-            list.DeleteFirst();
+            list.DeleteHead();
 
             list.DeleteLast();
 

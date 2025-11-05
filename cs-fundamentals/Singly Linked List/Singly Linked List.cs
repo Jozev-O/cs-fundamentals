@@ -1,20 +1,26 @@
-﻿namespace Linked_List_Singly
+﻿using System.Threading;
+
+namespace Linked_List_Singly
 {
     class SinglyLinkedList<T>
     {
-        public SinglyNode<T>? Head { get; set; }
+        #region Методы для тестов
+        internal SinglyNode<T>? GetHeadForTesting() => _head;
+        internal void SetHeadForTesting(SinglyNode<T>? node) => _head = node;
+        #endregion
+        private SinglyNode<T>? _head { get; set; }
         public SinglyLinkedList()
         {
-            Head = null;
+            _head = null;
         }
         public SinglyLinkedList(T value)
         {
-            Head = new SinglyNode<T>(value);
+            _head = new SinglyNode<T>(value);
         }
         public int GetLength()
         {
             int length = 0;
-            SinglyNode<T>? current = Head;
+            SinglyNode<T>? current = _head;
             while (current != null)
             {
                 length++;
@@ -24,13 +30,13 @@
         }
         public bool IsEmpty()
         {
-            return Head == null;
+            return _head == null;
         }
         public bool Search(T value)
         {
-            ArgumentNullException.ThrowIfNull(Head);
+            ArgumentNullException.ThrowIfNull(_head);
 
-            SinglyNode<T>? current = Head;
+            SinglyNode<T>? current = _head;
 
             while (current != null)
             {
@@ -42,32 +48,30 @@
             }
             return false;
         }
-        public bool Search(SinglyNode<T> node)
+        public T GetFirst(T value)
         {
-            ArgumentNullException.ThrowIfNull(Head);
-
-            SinglyNode<T>? current = Head;
+            SinglyNode<T>? current = _head;
 
             while (current != null)
             {
-                if (current!.Equals(node))
+                if (current!.Value.Equals(value))
                 {
-                    return true;
+                    return current.Value;
                 }
                 current = current.Next;
             }
-            return false;
+            return default;
         }
-        public void DeleteFirst()
+        public void DeleteHead()
         {
-            if (Head != null)
+            if (_head != null)
             {
-                Head = Head.Next;
+                _head = _head.Next;
             }
         }
         public void DeleteLast()
         {
-            SinglyNode<T> current = Head;
+            SinglyNode<T> current = _head;
             while (current?.Next != null)
             {
                 if (current.Next.Next == null)
@@ -80,13 +84,13 @@
         }
         public void DeleteByValue(T value)
         {
-            if (Head.Value!.Equals(value))
+            if (_head.Value!.Equals(value))
             {
-                Head = Head.Next;
+                _head = _head.Next;
                 return;
             }
 
-            SinglyNode<T> current = Head;
+            SinglyNode<T> current = _head;
 
             while (current.Next != null)
             {
@@ -98,20 +102,20 @@
                 current = current.Next;
             }
         }
-        public void InsertAtBeginning(T value)
+        public void Add(T value)
         {
             SinglyNode<T> newNode = new(value);
-            if (Head == null)
+            if (_head == null)
             {
-                Head = newNode;
+                _head = newNode;
             }
             else
             {
-                newNode.Next = Head;
-                Head = newNode;
+                newNode.Next = _head;
+                _head = newNode;
             }
         }
-        public void InsertAtPosition(T value, int position)
+        public void AddAt(T value, int position)
         {
             ArgumentOutOfRangeException.ThrowIfNegative(position);
             ArgumentOutOfRangeException.ThrowIfGreaterThan(position, GetLength());
@@ -120,12 +124,12 @@
 
             if (position == 0)
             {
-                newNode.Next = Head;
-                Head = newNode;
+                newNode.Next = _head;
+                _head = newNode;
                 return;
             }
 
-            SinglyNode<T>? current = Head;
+            SinglyNode<T>? current = _head;
             for (int i = 0; i < position - 1; i++)
             {
                 current = current.Next;
@@ -136,16 +140,16 @@
                 current.Next = newNode;
             }
         }
-        public void InsertAtEnd(T value)
+        public void AddToEnd(T value)
         {
             SinglyNode<T> newNode = new(value);
-            if (Head == null)
+            if (_head == null)
             {
-                Head = newNode;
+                _head = newNode;
             }
             else
             {
-                SinglyNode<T> current = Head;
+                SinglyNode<T> current = _head;
                 while (current.Next != null)
                 {
                     current = current.Next;
@@ -155,7 +159,7 @@
         }
         public override string ToString()
         {
-            SinglyNode<T>? current = Head;
+            SinglyNode<T>? current = _head;
             string result = "";
             while (current != null)
             {

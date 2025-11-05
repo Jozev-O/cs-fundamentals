@@ -7,7 +7,7 @@
 ### Data Structures
 
 - [X] Linked List (Singly Linked List)
-- [ ] Doubly Linked List
+- [X] Doubly Linked List
 - [ ] Circular Linked List
 - [ ] Stack
 - [ ] Queue
