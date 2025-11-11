@@ -8,7 +8,7 @@
 
 - [X] Linked List (Singly Linked List)
 - [X] Doubly Linked List
-- [ ] Circular Linked List
+- [X] Circular Linked List
 - [ ] Stack
 - [ ] Queue
 - [ ] Circular Queue
@@ -148,4 +148,4 @@
 
 ---
 
-*Последнее обновление: {дата}*
+*Последнее обновление: 11.11.2025*

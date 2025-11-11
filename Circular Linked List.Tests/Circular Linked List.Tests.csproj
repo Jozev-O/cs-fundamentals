@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>Singly_Linked_List.Tests</RootNamespace>
+    <RootNamespace>Circular_Linked_List.Tests</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Linked List (Singly)\Singly Linked List.csproj" />
+    <ProjectReference Include="..\Circular Linked List\Circular Linked List.csproj" />
   </ItemGroup>
 
   <ItemGroup>
