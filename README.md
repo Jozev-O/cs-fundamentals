@@ -11,7 +11,7 @@
 - [X] Circular Linked List
 - [X] Stack
 - [X] Queue
-- [ ] Circular Queue
+- [X] Circular Queue
 - [ ] Priority Queue
 - [ ] Deque (Double-Ended Queue)
 - [ ] Binary Tree
@@ -139,10 +139,10 @@
 
 ## Статистика прогресса
 
-**Общий прогресс:** 5/106 реализован
+**Общий прогресс:** 6/106 реализован
 
 **По категориям:**
-- Data Structures: 5/35
+- Data Structures: 6/35
 - Algorithms: 0/52
 - Design Patterns: 0/19
 
