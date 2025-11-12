@@ -9,7 +9,7 @@
 - [X] Linked List (Singly Linked List)
 - [X] Doubly Linked List
 - [X] Circular Linked List
-- [ ] Stack
+- [X] Stack
 - [ ] Queue
 - [ ] Circular Queue
 - [ ] Priority Queue
@@ -139,13 +139,13 @@
 
 ## Статистика прогресса
 
-**Общий прогресс:** 0% (0/106 реализовано)
+**Общий прогресс:** 3.77% (4/106 реализовано)
 
 **По категориям:**
-- Data Structures: 0% (0/35)
+- Data Structures: 11.43% (4/35)
 - Algorithms: 0% (0/52)  
 - Design Patterns: 0% (0/19)
 
 ---
 
-*Последнее обновление: 11.11.2025*
+*Последнее обновление: 12.11.2025*
