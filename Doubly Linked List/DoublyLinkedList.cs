@@ -4,24 +4,18 @@ namespace Doubly_Linked_List
 {
     public class DoublyLinkedList<T>
     {
-        #region Методы для тестов
-        internal DoublyNode<T>? GetHeadForTesting() => _head;
-        internal DoublyNode<T>? GetTailForTesting() => _tail;
-        internal void SetHeadForTesting(DoublyNode<T>? node) => _head = node;
-        internal void SetTailForTesting(DoublyNode<T>? node) => _tail = node;
-        #endregion
-        private DoublyNode<T>? _head { get; set; }
-        private DoublyNode<T>? _tail { get; set; }
+        public DoublyNode<T>? Head { get; private set; }
+        public DoublyNode<T>? Tail { get; private set; }
         public DoublyLinkedList() { }
         public DoublyLinkedList(T value)
         {
-            _head = new(value);
-            _tail = _head;
+            Head = new(value);
+            Tail = Head;
         }
         public int GetLength()
         {
             int length = 0;
-            DoublyNode<T>? current = _head;
+            DoublyNode<T>? current = Head;
             while (current != null)
             {
                 length++;
@@ -31,18 +25,18 @@ namespace Doubly_Linked_List
         }
         public bool IsEmpty()
         {
-            return _head == null;
+            return Head == null;
         }
         public void Clear()
         {
-            _head = null;
-            _tail = null;
+            Head = null;
+            Tail = null;
         }
         public bool Search(T value)
         {
             if (IsEmpty()) return false;
 
-            DoublyNode<T>? current = _head;
+            DoublyNode<T>? current = Head;
 
             while (current != null)
             {
@@ -57,13 +51,13 @@ namespace Doubly_Linked_List
         }
         public T GetFirst(T value, bool SearchFromTail = false)
         {
-            if (_head is null) return default;
+            if (Head is null) return default;
 
             return SearchFromTail ? GetFirstFromTail(value) : GetFirstFromHead(value);
         }
         private T GetFirstFromTail(T value)
         {
-            DoublyNode<T>? current = _tail;
+            DoublyNode<T>? current = Tail;
 
             while (current != null)
             {
@@ -77,7 +71,7 @@ namespace Doubly_Linked_List
         }
         private T GetFirstFromHead(T value)
         {
-            DoublyNode<T>? current = _head;
+            DoublyNode<T>? current = Head;
 
             while (current != null)
             {
@@ -91,48 +85,48 @@ namespace Doubly_Linked_List
         }
         public void DeleteHead()
         {
-            if (_head != null)
+            if (Head != null)
             {
-                _head = _head.Next;
-                if (GetLength() > 0) _head.Previous = null;
+                Head = Head.Next;
+                if (GetLength() > 0) Head.Previous = null;
             }
         }
         public void DeleteTail()
         {
-            if (_tail != null)
+            if (Tail != null)
             {
-                _tail = _tail.Previous;
-                if (GetLength() > 0) _tail.Next = null;
+                Tail = Tail.Previous;
+                if (GetLength() > 0) Tail.Next = null;
 
             }
         }
         public void DeleteByValue(T value)
         {
-            if (_head is null) return;
+            if (Head is null) return;
 
-            if (_head.Value.Equals(value))
+            if (Head.Value.Equals(value))
             {
-                if (_head == _tail)
+                if (Head == Tail)
                 {
-                    _head = null;
-                    _tail = null;
+                    Head = null;
+                    Tail = null;
                     return;
                 }
-                _head = _head.Next;
-                _head.Previous ??= null;
+                Head = Head.Next;
+                Head.Previous ??= null;
                 return;
             }
 
-            DoublyNode<T>? current = _head;
+            DoublyNode<T>? current = Head;
 
             while (current?.Next != null)
             {
                 if (current.Value.Equals(value))
                 {
-                    if (current == _tail)
+                    if (current == Tail)
                     {
-                        _tail = current.Previous;
-                        _tail.Next = null;
+                        Tail = current.Previous;
+                        Tail.Next = null;
                     }
                     else
                     {
@@ -147,16 +141,16 @@ namespace Doubly_Linked_List
         public void InsertAtHead(T value)
         {
             DoublyNode<T> newNode = new(value);
-            if (_head == null)
+            if (Head == null)
             {
-                _head = newNode;
-                _tail = _head;
+                Head = newNode;
+                Tail = Head;
             }
             else
             {
-                newNode.Next = _head;
-                _head.Previous = newNode;
-                _head = newNode;
+                newNode.Next = Head;
+                Head.Previous = newNode;
+                Head = newNode;
             }
         }
         public void InsertAtPosition(T value, int position)
@@ -165,21 +159,21 @@ namespace Doubly_Linked_List
 
             DoublyNode<T> newNode = new(value);
 
-            if (_head == null)
+            if (Head == null)
             {
-                _head = newNode;
-                _tail = _head;
+                Head = newNode;
+                Tail = Head;
                 return;
             }
 
             if (position == 0)
             {
-                newNode.Next = _head;
-                _head = newNode;
+                newNode.Next = Head;
+                Head = newNode;
                 return;
             }
 
-            DoublyNode<T>? current = _head;
+            DoublyNode<T>? current = Head;
 
             for (int i = 0; i < position && current.Next != null; i++)
             {
@@ -195,16 +189,16 @@ namespace Doubly_Linked_List
         {
             DoublyNode<T> newNode = new(value);
 
-            if (_head == null)
+            if (Head == null)
             {
-                _head = newNode;
-                _tail = _head;
+                Head = newNode;
+                Tail = Head;
             }
             else
             {
-                _tail.Next = newNode;
-                newNode.Previous = _tail;
-                _tail = newNode;
+                Tail.Next = newNode;
+                newNode.Previous = Tail;
+                Tail = newNode;
             }
         }
         public string ToString(bool TailToHead = false)
@@ -213,7 +207,7 @@ namespace Doubly_Linked_List
 
             if (!TailToHead)
             {
-                DoublyNode<T>? current = _head;
+                DoublyNode<T>? current = Head;
                 while (current != null)
                 {
                     if (sb.Length > 0)
@@ -224,7 +218,7 @@ namespace Doubly_Linked_List
             }
             else
             {
-                DoublyNode<T>? current = _tail;
+                DoublyNode<T>? current = Tail;
                 while (current != null)
                 {
                     if (sb.Length > 0)

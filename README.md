@@ -13,7 +13,7 @@
 - [X] Queue
 - [X] Circular Queue
 - [ ] Priority Queue
-- [ ] Deque (Double-Ended Queue)
+- [X] Deque (Double-Ended Queue)
 - [ ] Binary Tree
 - [ ] Binary Search Tree (BST)
 - [ ] AVL Tree
@@ -139,10 +139,10 @@
 
 ## Статистика прогресса
 
-**Общий прогресс:** 7/106 реализован
+**Общий прогресс:** 8/106 реализован
 
 **По категориям:**
-- Data Structures: 7/35
+- Data Structures: 8/35
 - Algorithms: 0/52
 - Design Patterns: 0/19
 

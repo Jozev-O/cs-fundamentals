@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap", "Heap\Heap.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap.Tests", "Heap.Tests\Heap.Tests.csproj", "{0DA03291-528F-4B0B-9F97-2D5B65F9063E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deque", "Deque\Deque.csproj", "{28ABF356-5992-4B6A-B261-03F58F28E953}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deque.Tests", "Deque.Tests\Deque.Tests.csproj", "{99BACF49-C967-4935-A8CC-576418835F40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{0DA03291-528F-4B0B-9F97-2D5B65F9063E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DA03291-528F-4B0B-9F97-2D5B65F9063E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DA03291-528F-4B0B-9F97-2D5B65F9063E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28ABF356-5992-4B6A-B261-03F58F28E953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28ABF356-5992-4B6A-B261-03F58F28E953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28ABF356-5992-4B6A-B261-03F58F28E953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28ABF356-5992-4B6A-B261-03F58F28E953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99BACF49-C967-4935-A8CC-576418835F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99BACF49-C967-4935-A8CC-576418835F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99BACF49-C967-4935-A8CC-576418835F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99BACF49-C967-4935-A8CC-576418835F40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

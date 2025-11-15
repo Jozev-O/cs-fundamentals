@@ -10,11 +10,11 @@
             var list = new DoublyLinkedList<int>(52);
 
             // Assert
-            Assert.NotNull(list.GetHeadForTesting());
-            Assert.NotNull(list.GetTailForTesting());
-            Assert.Equal(52, list.GetHeadForTesting().Value);
-            Assert.Equal(52, list.GetTailForTesting().Value);
-            Assert.Equal(list.GetHeadForTesting(), list.GetTailForTesting());
+            Assert.NotNull(list.Head);
+            Assert.NotNull(list.Tail);
+            Assert.Equal(52, list.Head.Value);
+            Assert.Equal(52, list.Tail.Value);
+            Assert.Equal(list.Head, list.Tail);
         }
 
         [Fact]
@@ -24,11 +24,11 @@
             var list = new DoublyLinkedList<string>("test");
 
             // Assert
-            Assert.NotNull(list.GetHeadForTesting());
-            Assert.NotNull(list.GetTailForTesting());
-            Assert.Equal("test", list.GetHeadForTesting().Value);
-            Assert.Equal("test", list.GetTailForTesting().Value);
-            Assert.Equal(list.GetHeadForTesting(), list.GetTailForTesting());
+            Assert.NotNull(list.Head);
+            Assert.NotNull(list.Tail);
+            Assert.Equal("test", list.Head.Value);
+            Assert.Equal("test", list.Tail.Value);
+            Assert.Equal(list.Head, list.Tail);
         }
 
         [Fact]
@@ -49,11 +49,11 @@
             var list = new DoublyLinkedList<string>("test");
 
             // Assert
-            Assert.NotNull(list.GetHeadForTesting());
-            Assert.NotNull(list.GetTailForTesting());
-            Assert.Equal("test", list.GetHeadForTesting().Value);
-            Assert.Equal("test", list.GetTailForTesting().Value);
-            Assert.Equal(list.GetHeadForTesting(), list.GetTailForTesting());
+            Assert.NotNull(list.Head);
+            Assert.NotNull(list.Tail);
+            Assert.Equal("test", list.Head.Value);
+            Assert.Equal("test", list.Tail.Value);
+            Assert.Equal(list.Head, list.Tail);
         }
 
         [Fact]
@@ -63,10 +63,10 @@
             var list = new DoublyLinkedList<int>(10);
 
             // Act
-            list.GetHeadForTesting().Value = 20;
+            list.Head.Value = 20;
 
             // Assert
-            Assert.Equal(20, list.GetHeadForTesting().Value);
+            Assert.Equal(20, list.Head.Value);
         }
 
         [Fact]
@@ -76,7 +76,7 @@
             var list = new DoublyLinkedList<int>(1);
 
             // Assert
-            Assert.Null(list.GetHeadForTesting().Next);
+            Assert.Null(list.Head.Next);
         }
 
         [Fact]
@@ -86,7 +86,7 @@
             var list = new DoublyLinkedList<int>(1);
 
             // Assert
-            Assert.Null(list.GetHeadForTesting().Previous);
+            Assert.Null(list.Head.Previous);
         }
 
         [Fact]
@@ -96,7 +96,7 @@
             var list = new DoublyLinkedList<int>(1);
 
             // Assert
-            Assert.Null(list.GetTailForTesting().Next);
+            Assert.Null(list.Tail.Next);
         }
 
         [Fact]
@@ -106,7 +106,7 @@
             var list = new DoublyLinkedList<int>(1);
 
             // Assert
-            Assert.Null(list.GetTailForTesting().Previous);
+            Assert.Null(list.Tail.Previous);
         }
 
         [Fact]
@@ -146,8 +146,8 @@
             var list = new DoublyLinkedList<int>(1);
 
             // Assert
-            Assert.NotNull(list.GetHeadForTesting());
-            Assert.NotNull(list.GetTailForTesting());
+            Assert.NotNull(list.Head);
+            Assert.NotNull(list.Tail);
         }
 
         [Fact]
@@ -157,7 +157,7 @@
             var list = new DoublyLinkedList<int>(1);
 
             // Assert
-            Assert.Equal(list.GetHeadForTesting(), list.GetTailForTesting());
+            Assert.Equal(list.Head, list.Tail);
         }
 
         [Fact]
@@ -170,14 +170,14 @@
             list.InsertAtTail(2);
 
             // Assert
-            Assert.Equal(1, list.GetHeadForTesting().Value);
-            Assert.Equal(2, list.GetTailForTesting().Value);
+            Assert.Equal(1, list.Head.Value);
+            Assert.Equal(2, list.Tail.Value);
 
-            Assert.Null(list.GetTailForTesting().Next);
-            Assert.Null(list.GetHeadForTesting().Previous);
+            Assert.Null(list.Tail.Next);
+            Assert.Null(list.Head.Previous);
 
-            Assert.Equal(list.GetTailForTesting(), list.GetHeadForTesting().Next);
-            Assert.Equal(list.GetHeadForTesting(), list.GetTailForTesting().Previous);
+            Assert.Equal(list.Tail, list.Head.Next);
+            Assert.Equal(list.Head, list.Tail.Previous);
         }
 
         [Fact]
@@ -190,14 +190,14 @@
             list.InsertAtHead(1);
 
             // Assert
-            Assert.Equal(1, list.GetHeadForTesting().Value);
-            Assert.Equal(2, list.GetTailForTesting().Value);
+            Assert.Equal(1, list.Head.Value);
+            Assert.Equal(2, list.Tail.Value);
 
-            Assert.Null(list.GetTailForTesting().Next);
-            Assert.Null(list.GetHeadForTesting().Previous);
+            Assert.Null(list.Tail.Next);
+            Assert.Null(list.Head.Previous);
 
-            Assert.Equal(list.GetTailForTesting(), list.GetHeadForTesting().Next);
-            Assert.Equal(list.GetHeadForTesting(), list.GetTailForTesting().Previous);
+            Assert.Equal(list.Tail, list.Head.Next);
+            Assert.Equal(list.Head, list.Tail.Previous);
         }
 
         [Fact]
@@ -211,12 +211,12 @@
             list.InsertAtPosition(2, 1); // Insert 2 at position 1
 
             // Assert
-            Assert.Equal(1, list.GetHeadForTesting().Value);
-            Assert.Equal(3, list.GetTailForTesting().Value);
-            Assert.Equal(2, list.GetHeadForTesting().Next.Value);
-            Assert.Equal(list.GetHeadForTesting().Next, list.GetTailForTesting().Previous);
-            Assert.Equal(list.GetHeadForTesting(), list.GetHeadForTesting().Next.Previous);
-            Assert.Equal(list.GetTailForTesting(), list.GetHeadForTesting().Next.Next);
+            Assert.Equal(1, list.Head.Value);
+            Assert.Equal(3, list.Tail.Value);
+            Assert.Equal(2, list.Head.Next.Value);
+            Assert.Equal(list.Head.Next, list.Tail.Previous);
+            Assert.Equal(list.Head, list.Head.Next.Previous);
+            Assert.Equal(list.Tail, list.Head.Next.Next);
         }
 
         [Fact]
@@ -234,10 +234,10 @@
             var list = new DoublyLinkedList<ComplexObject>(complexObject);
 
             // Assert
-            Assert.Equal(complexObject, list.GetHeadForTesting().Value);
-            Assert.Equal("Test", list.GetHeadForTesting().Value.Name);
-            Assert.Equal(3, list.GetHeadForTesting().Value.Data.Count);
-            Assert.Equal(1, list.GetHeadForTesting().Value.Data[0]);
+            Assert.Equal(complexObject, list.Head.Value);
+            Assert.Equal("Test", list.Head.Value.Name);
+            Assert.Equal(3, list.Head.Value.Data.Count);
+            Assert.Equal(1, list.Head.Value.Data[0]);
         }
 
         [Fact]
@@ -253,8 +253,8 @@
 
             // Assert
             Assert.True(list.IsEmpty());
-            Assert.Null(list.GetHeadForTesting());
-            Assert.Null(list.GetTailForTesting());
+            Assert.Null(list.Head);
+            Assert.Null(list.Tail);
             Assert.Equal(0, list.GetLength());
         }
 
@@ -286,12 +286,12 @@
             list.InsertAtTail(5);
 
             // Assert
-            Assert.Equal(1, list.GetHeadForTesting().Value);
-            Assert.Equal(5, list.GetTailForTesting().Value);
+            Assert.Equal(1, list.Head.Value);
+            Assert.Equal(5, list.Tail.Value);
             Assert.Equal(5, list.GetLength());
 
             // Verify the sequence
-            var current = list.GetHeadForTesting();
+            var current = list.Head;
             for (int i = 1; i <= 5; i++)
             {
                 Assert.Equal(i, current.Value);
@@ -330,10 +330,10 @@
 
             // Assert
             Assert.Equal(1, list.GetLength());
-            Assert.Equal(2, list.GetHeadForTesting().Value);
-            Assert.Equal(list.GetHeadForTesting(), list.GetTailForTesting());
-            Assert.Null(list.GetHeadForTesting().Previous);
-            Assert.Null(list.GetTailForTesting().Next);
+            Assert.Equal(2, list.Head.Value);
+            Assert.Equal(list.Head, list.Tail);
+            Assert.Null(list.Head.Previous);
+            Assert.Null(list.Tail.Next);
         }
 
         [Fact]
@@ -349,10 +349,10 @@
 
             // Assert
             Assert.Equal(1, list.GetLength());
-            Assert.Equal(1, list.GetHeadForTesting().Value);
-            Assert.Equal(list.GetHeadForTesting(), list.GetTailForTesting());
-            Assert.Null(list.GetHeadForTesting().Previous);
-            Assert.Null(list.GetTailForTesting().Next);
+            Assert.Equal(1, list.Head.Value);
+            Assert.Equal(list.Head, list.Tail);
+            Assert.Null(list.Head.Previous);
+            Assert.Null(list.Tail.Next);
         }
 
         [Fact]
