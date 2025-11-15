@@ -20,7 +20,7 @@
 - [ ] Red-Black Tree
 - [ ] B-Tree
 - [ ] B+ Tree
-- [ ] Heap (Binary Heap, Min-Heap, Max-Heap)
+- [X] Heap (Binary Heap, Min-Heap, Max-Heap)
 - [ ] Fibonacci Heap
 - [ ] Trie (Prefix Tree)
 - [ ] Suffix Tree
@@ -139,13 +139,13 @@
 
 ## Статистика прогресса
 
-**Общий прогресс:** 6/106 реализован
+**Общий прогресс:** 7/106 реализован
 
 **По категориям:**
-- Data Structures: 6/35
+- Data Structures: 7/35
 - Algorithms: 0/52
 - Design Patterns: 0/19
 
 ---
 
-*Последнее обновление: 12.11.2025*
+*Последнее обновление: 15.11.2025*
