@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deque", "Deque\Deque.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deque.Tests", "Deque.Tests\Deque.Tests.csproj", "{99BACF49-C967-4935-A8CC-576418835F40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binary Tree", "Binary Tree\Binary Tree.csproj", "{D47F2081-FDEC-4DC1-ADD2-5B53B5F7CA8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binary Tree.Tests", "Binary Tree.Tests\Binary Tree.Tests.csproj", "{943FE767-8C27-4DDD-9F87-0E6BB6627866}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{99BACF49-C967-4935-A8CC-576418835F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99BACF49-C967-4935-A8CC-576418835F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99BACF49-C967-4935-A8CC-576418835F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47F2081-FDEC-4DC1-ADD2-5B53B5F7CA8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47F2081-FDEC-4DC1-ADD2-5B53B5F7CA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47F2081-FDEC-4DC1-ADD2-5B53B5F7CA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47F2081-FDEC-4DC1-ADD2-5B53B5F7CA8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943FE767-8C27-4DDD-9F87-0E6BB6627866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943FE767-8C27-4DDD-9F87-0E6BB6627866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943FE767-8C27-4DDD-9F87-0E6BB6627866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943FE767-8C27-4DDD-9F87-0E6BB6627866}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
