@@ -6,21 +6,21 @@
 
 ### Data Structures
 
-- [X] Linked List (Singly Linked List)
-- [X] Doubly Linked List
-- [X] Circular Linked List
-- [X] Stack
-- [X] Queue
-- [X] Circular Queue
+- [x] Linked List (Singly Linked List)
+- [x] Doubly Linked List
+- [x] Circular Linked List
+- [x] Stack
+- [x] Queue
+- [x] Circular Queue
 - [ ] Priority Queue
-- [X] Deque (Double-Ended Queue)
-- [ ] Binary Tree
+- [x] Deque (Double-Ended Queue)
+- [x] Binary Tree
 - [ ] Binary Search Tree (BST)
 - [ ] AVL Tree
 - [ ] Red-Black Tree
 - [ ] B-Tree
 - [ ] B+ Tree
-- [X] Heap (Binary Heap, Min-Heap, Max-Heap)
+- [ ] Heap (Binary Heap, Min-Heap, Max-Heap)
 - [ ] Fibonacci Heap
 - [ ] Trie (Prefix Tree)
 - [ ] Suffix Tree
@@ -137,15 +137,18 @@
 - [ ] Other: Service Locator
 - [ ] Other: Event-Driven Architecture
 
+
+
 ## Статистика прогресса
 
-**Общий прогресс:** 8/106 реализован
+**Общий прогресс:** реализовано 8/124 (6,45%)
 
 **По категориям:**
-- Data Structures: 8/35
-- Algorithms: 0/52
-- Design Patterns: 0/19
+- Data Structures: 8/38 (21,05%)
+- Algorithms: 0/53 (0,00%)
+- Design Patterns: 0/33 (0,00%)
+
 
 ---
 
-*Последнее обновление: 15.11.2025*
+*Последнее обновление: 23.11.2025*
