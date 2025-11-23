@@ -4,10 +4,10 @@ namespace Binary_Search_Tree
 {
     public class Binary_Search_Tree<T> where T : IComparable<T>
     {
-        private Node<T> Root { get; set; }
+        private Node<T> _root { get; set; }
         public void Insert(T value)
         {
-            Root = Insert(Root, value);
+            _root = Insert(_root, value);
         }
         private Node<T> Insert(Node<T> node, T value)
         {
@@ -21,7 +21,7 @@ namespace Binary_Search_Tree
         }
         public bool Contains(T value)
         {
-            return Contains(Root, value);
+            return Contains(_root, value);
         }
 
         private bool Contains(Node<T> node, T value)
@@ -38,7 +38,7 @@ namespace Binary_Search_Tree
 
         public void Delete(T value) // рекурсивно, с обработкой случаев(0/1/2 ребёнка; для 2 — найти min в правом, заменить, удалить min).
         {
-            Root = Delete(Root, value);
+            _root = Delete(_root, value);
         }
         private Node<T> Delete(Node<T> node, T value)
         {
@@ -71,7 +71,7 @@ namespace Binary_Search_Tree
         }
         public void InOrder(Action<T> action)
         {
-            InOrder(Root, action);
+            InOrder(_root, action);
         }
 
         private void InOrder(Node<T>? node, Action<T> action)

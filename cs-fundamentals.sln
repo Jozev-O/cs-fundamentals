@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binary Search Tree", "Binar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binary Search Tree.Tests", "Binary Search Tree.Tests\Binary Search Tree.Tests.csproj", "{70928D2E-AAA4-45C6-A207-7399AF263885}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVL Tree", "AVL Tree\AVL Tree.csproj", "{4A9BC928-4CF4-4A26-9702-BCCA9C9D8F5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVL_Tree.Tests", "AVL_Tree.Tests\AVL_Tree.Tests.csproj", "{3A761D40-5E13-4CDB-93AA-FB452D8EAA88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,14 @@ Global
 		{70928D2E-AAA4-45C6-A207-7399AF263885}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70928D2E-AAA4-45C6-A207-7399AF263885}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70928D2E-AAA4-45C6-A207-7399AF263885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A9BC928-4CF4-4A26-9702-BCCA9C9D8F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9BC928-4CF4-4A26-9702-BCCA9C9D8F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9BC928-4CF4-4A26-9702-BCCA9C9D8F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9BC928-4CF4-4A26-9702-BCCA9C9D8F5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A761D40-5E13-4CDB-93AA-FB452D8EAA88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A761D40-5E13-4CDB-93AA-FB452D8EAA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A761D40-5E13-4CDB-93AA-FB452D8EAA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A761D40-5E13-4CDB-93AA-FB452D8EAA88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
