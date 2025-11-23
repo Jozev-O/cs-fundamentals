@@ -15,7 +15,7 @@
 - [ ] Priority Queue
 - [x] Deque (Double-Ended Queue)
 - [x] Binary Tree
-- [ ] Binary Search Tree (BST)
+- [x] Binary Search Tree (BST)
 - [ ] AVL Tree
 - [ ] Red-Black Tree
 - [ ] B-Tree
@@ -141,10 +141,10 @@
 
 ## Статистика прогресса
 
-**Общий прогресс:** реализовано 8/124 (6,45%)
+**Общий прогресс:** реализовано 9/124 (7,26%)
 
 **По категориям:**
-- Data Structures: 8/38 (21,05%)
+- Data Structures: 9/38 (23,68%)
 - Algorithms: 0/53 (0,00%)
 - Design Patterns: 0/33 (0,00%)
 

@@ -332,13 +332,13 @@ namespace Binary_Tree.Tests
             // Arrange
             var tree = new BinaryTree<int>();
             // Build this tree:
-            //        1
-            //       / \
-            //      2   3
-            //     / \   \
-            //    4   5   6
+            //         1
+            //       /   \
+            //      2     3
+            //     / \   / \
+            //    4   5 6   7
             //   /
-            //  7
+            //  8
             tree.Insert(1);
             tree.Insert(2);
             tree.Insert(3);
@@ -346,6 +346,7 @@ namespace Binary_Tree.Tests
             tree.Insert(5);
             tree.Insert(6);
             tree.Insert(7);
+            tree.Insert(8);
 
             var preOrder = new List<int>();
             var inOrder = new List<int>();
@@ -359,14 +360,14 @@ namespace Binary_Tree.Tests
             tree.TraverseLevelOrder(value => levelOrder.Add(value));
 
             // Assert
-            Assert.Equal(7, tree.Size());
+            Assert.Equal(8, tree.Size());
             Assert.Equal(4, tree.Height());
 
             // Expected orders based on tree structure
-            Assert.Equal([1, 2, 4, 7, 5, 3, 6], preOrder);
-            Assert.Equal([7, 4, 2, 5, 1, 3, 6], inOrder);
-            Assert.Equal([7, 4, 5, 2, 6, 3, 1], postOrder);
-            Assert.Equal([1, 2, 3, 4, 5, 6, 7], levelOrder);
+            Assert.Equal([1, 2, 4, 8, 5, 3, 6, 7], preOrder);
+            Assert.Equal([8, 4, 2, 5, 1, 6, 3, 7], inOrder);
+            Assert.Equal([8, 4, 5, 2, 6, 7, 3, 1], postOrder);
+            Assert.Equal([1, 2, 3, 4, 5, 6, 7, 8], levelOrder);
         }
 
         [Fact]
