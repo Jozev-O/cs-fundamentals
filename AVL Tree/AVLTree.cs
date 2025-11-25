@@ -9,7 +9,6 @@
         {
             return _root == null;
         }
-
         public void Insert(T value)
         {
             if (IsEmpty())
@@ -40,26 +39,25 @@
 
 
             // LL
-            if (balance > 1 && (value.CompareTo(node.Left.Value) < 0))
+            if (balance > 1 && GetBalance(node.Left) < 0)
                 return RightRotate(node);
             // RR
-            if (balance < -1 && (value.CompareTo(node.Right.Value) > 0))
+            if (balance < -1 && GetBalance(node.Right) > 0)
                 return LeftRotate(node);
             // LR
-            if (balance > 1 && value.CompareTo(node.Left.Value) > 0)
+            if (balance > 1 && GetBalance(node.Left) > 0)
             {
                 node.Left = LeftRotate(node.Left);
                 return RightRotate(node);
             }
             // RL
-            if (balance < -1 && value.CompareTo(node.Right.Value) < 0)
+            if (balance < -1 && GetBalance(node.Right) < 0)
             {
                 node.Right = RightRotate(node.Right);
                 return LeftRotate(node);
             }
             return node;
         }
-
         private Node<T> LeftRotate(Node<T> node)
         {
             var y = node.Right;
@@ -70,7 +68,6 @@
             y.height = Math.Max(GetHeight(y.Left), GetHeight(y.Right)) + 1;
             return y;
         }
-
         private Node<T> RightRotate(Node<T> node)
         {
             var x = node.Left;
@@ -81,17 +78,13 @@
             x.height = Math.Max(GetHeight(x.Left), GetHeight(x.Right)) + 1;
             return x;
         }
-
         private int GetBalance(Node<T> node)
         {
             if (node is null) return 0;
             return GetHeight(node.Left) - GetHeight(node.Right);
         }
-
         private int GetHeight(Node<T> node)
         {
-            if (IsEmpty()) throw new InvalidOperationException(TREE_IS_EMPTY_MESSAGE);
-
             return Height(node);
             static int Height(Node<T> node)
             {
@@ -99,7 +92,6 @@
                 return 1 + Math.Max(Height(node.Right), Height(node.Left));
             }
         }
-
         public bool Contains(T value)
         {
             return Contains(_root, value);
@@ -116,7 +108,6 @@
         {
             _root = Delete(_root, value);
         }
-
         private Node<T> Delete(Node<T> node, T value)
         {
             if (node is null) return node;

@@ -12,15 +12,15 @@
 - [x] Stack
 - [x] Queue
 - [x] Circular Queue
-- [ ] Priority Queue
+- [x] Priority Queue
 - [x] Deque (Double-Ended Queue)
 - [x] Binary Tree
 - [x] Binary Search Tree (BST)
-- [ ] AVL Tree
+- [x] AVL Tree
 - [ ] Red-Black Tree
 - [ ] B-Tree
 - [ ] B+ Tree
-- [ ] Heap (Binary Heap, Min-Heap, Max-Heap)
+- [x] Heap (Binary Heap, Min-Heap, Max-Heap)
 - [ ] Fibonacci Heap
 - [ ] Trie (Prefix Tree)
 - [ ] Suffix Tree
@@ -141,14 +141,14 @@
 
 ## Статистика прогресса
 
-**Общий прогресс:** реализовано 9/124 (7,26%)
+**Общий прогресс:** реализовано 12/124 (9,68%)
 
 **По категориям:**
-- Data Structures: 9/38 (23,68%)
+- Data Structures: 12/38 (31,58%)
 - Algorithms: 0/53 (0,00%)
 - Design Patterns: 0/33 (0,00%)
 
 
 ---
 
-*Последнее обновление: 23.11.2025*
+*Последнее обновление: 25.11.2025*
