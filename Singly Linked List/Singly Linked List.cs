@@ -2,7 +2,7 @@
 
 namespace Linked_List_Singly
 {
-    class SinglyLinkedList<T>
+    public class SinglyLinkedList<T>
     {
         #region Методы для тестов
         internal SinglyNode<T>? GetHeadForTesting() => _head;
