@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Circular Queue\Circular-Queue.csproj" />
+    <ProjectReference Include="..\Circular-Queue\Circular-Queue.csproj" />
   </ItemGroup>
 
   <ItemGroup>

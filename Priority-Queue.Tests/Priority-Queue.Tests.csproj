@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Priority Queue\Priority-Queue.csproj" />
+    <ProjectReference Include="..\Priority-Queue\Priority-Queue.csproj" />
   </ItemGroup>
 
   <ItemGroup>

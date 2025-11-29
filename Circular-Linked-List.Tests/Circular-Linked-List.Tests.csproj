@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Circular Linked List\Circular-Linked-List.csproj" />
+    <ProjectReference Include="..\Circular-Linked-List\Circular-Linked-List.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Singly Linked List\Singly-Linked-List.csproj" />
+    <ProjectReference Include="..\Singly-Linked-List\Singly-Linked-List.csproj" />
   </ItemGroup>
 
   <ItemGroup>

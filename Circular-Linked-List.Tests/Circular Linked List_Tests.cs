@@ -1,6 +1,6 @@
 ﻿namespace Circular_Linked_List.Tests
 {
-    public class Circular_Linked_List
+    public class Circular_Linked_List_Tests
     {
         [Fact]
         public void Constructor_With_Value_Sets_Value_Correctly()

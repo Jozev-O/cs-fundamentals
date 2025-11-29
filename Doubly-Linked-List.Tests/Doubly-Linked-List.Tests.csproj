@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Doubly Linked List\Doubly-Linked List.csproj" />
+    <ProjectReference Include="..\Doubly-Linked-List\Doubly-Linked-List.csproj" />
   </ItemGroup>
 
   <ItemGroup>
