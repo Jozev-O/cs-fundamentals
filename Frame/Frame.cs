@@ -1,4 +1,4 @@
-﻿namespace FrameModel
+﻿namespace Frame
 {
     public class Frame
     {
