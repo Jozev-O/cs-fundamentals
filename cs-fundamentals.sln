@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0TEMP", "0TEMP\0TEMP.csproj", "{89104C50-596B-4CBC-9310-42F4B378DA5D}"
 EndProject
@@ -35,8 +35,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frame", "Frame\Frame.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frame.Tests", "Frame.Tests\Frame.Tests.csproj", "{0AB4F3BA-1AF3-FE13-8737-F51B3CB4FEB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash-Table(with-Chaining)[unfinished]", "Hash-Table(with-Chaining)\Hash-Table(with-Chaining)[unfinished].csproj", "{5F2CA20A-5F3C-4271-A741-D15F75B177E1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap", "Heap\Heap.csproj", "{D3E61D11-6249-9BB8-6360-BC12D7BDB059}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap.Tests", "Heap.Tests\Heap.Tests.csproj", "{6E859C06-0654-4664-5F7C-3FFC0E84AE7E}"
@@ -58,6 +56,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{1E0314D2-F632-C017-3B3B-2FEB598A47A2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack.Tests", "Stack.Tests\Stack.Tests.csproj", "{6F80482A-A6F9-9141-6F0B-E84D7806F88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash-Table(with-Chaining)", "Hash-Table(with-Chaining)\Hash-Table(with-Chaining).csproj", "{757C29B8-CF5B-40B5-9C41-AAF9AD50EF57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash-Table(with-Chaining).Tests", "Hash-Table(with-Chaining).Tests\Hash-Table(with-Chaining).Tests.csproj", "{2402B38A-882B-42FE-A99E-E13C88B7EE1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,10 +131,6 @@ Global
 		{0AB4F3BA-1AF3-FE13-8737-F51B3CB4FEB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AB4F3BA-1AF3-FE13-8737-F51B3CB4FEB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AB4F3BA-1AF3-FE13-8737-F51B3CB4FEB9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5F2CA20A-5F3C-4271-A741-D15F75B177E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F2CA20A-5F3C-4271-A741-D15F75B177E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F2CA20A-5F3C-4271-A741-D15F75B177E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F2CA20A-5F3C-4271-A741-D15F75B177E1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D3E61D11-6249-9BB8-6360-BC12D7BDB059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D3E61D11-6249-9BB8-6360-BC12D7BDB059}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3E61D11-6249-9BB8-6360-BC12D7BDB059}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -177,6 +175,14 @@ Global
 		{6F80482A-A6F9-9141-6F0B-E84D7806F88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F80482A-A6F9-9141-6F0B-E84D7806F88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F80482A-A6F9-9141-6F0B-E84D7806F88C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757C29B8-CF5B-40B5-9C41-AAF9AD50EF57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757C29B8-CF5B-40B5-9C41-AAF9AD50EF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757C29B8-CF5B-40B5-9C41-AAF9AD50EF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757C29B8-CF5B-40B5-9C41-AAF9AD50EF57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2402B38A-882B-42FE-A99E-E13C88B7EE1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2402B38A-882B-42FE-A99E-E13C88B7EE1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2402B38A-882B-42FE-A99E-E13C88B7EE1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2402B38A-882B-42FE-A99E-E13C88B7EE1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
