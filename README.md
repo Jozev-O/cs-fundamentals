@@ -24,7 +24,7 @@
 - [ ] Fibonacci Heap
 - [ ] Trie (Prefix Tree)
 - [ ] Suffix Tree
-- [ ] Hash Table (with Chaining)
+- [x] Hash Table (with Chaining)
 - [ ] Hash Table (with Open Addressing: Linear Probing, Quadratic Probing, Double Hashing)
 - [ ] Set (Hash Set, Tree Set)
 - [ ] Map (Hash Map, Tree Map)
@@ -142,10 +142,10 @@
 
 ## Статистика прогресса
 
-**Общий прогресс:** реализовано 13/125 (10,40%)
+**Общий прогресс:** реализовано 14/125 (11,20%)
 
 **По категориям:**
-- Data Structures: 13/39 (33,33%)
+- Data Structures: 14/39 (35,90%)
 - Algorithms: 0/53 (0,00%)
 - Design Patterns: 0/33 (0,00%)
 
