@@ -1,8 +1,8 @@
 # CS Fundamentals
 
-Практическая реализация фундаментальных структур данных, алгоритмов и паттернов проектирования. Цель проекта — глубокое понимание основ Computer Science через самостоятельное кодирование.
+Practical implementation of fundamental data structures, algorithms, and design patterns. The goal of the project is a deep understanding of the basics of Computer Science through self—coding.
 
-## Прогресс реализации
+## Implementation progress
 
 ### Data Structures
 
@@ -26,8 +26,7 @@
 - [ ] Suffix Tree
 - [x] Hash Table (with Chaining)
 - [ ] Hash Table (with Open Addressing: Linear Probing, Quadratic Probing, Double Hashing)
-- [ ] Set (Hash Set, Tree Set)
-- [ ] Map (Hash Map, Tree Map)
+- [x] Hash Set
 - [ ] Graph (Undirected)
 - [ ] Graph (Directed)
 - [ ] Weighted Graph
@@ -140,16 +139,16 @@
 
 
 
-## Статистика прогресса
+## Progress statistics
 
-**Общий прогресс:** реализовано 14/125 (11,20%)
+**Overall progress:** 15/124 (12,10%)
 
-**По категориям:**
-- Data Structures: 14/39 (35,90%)
+**Categories:**
+- Data Structures: 15/38 (39,47%)
 - Algorithms: 0/53 (0,00%)
 - Design Patterns: 0/33 (0,00%)
 
 
 ---
 
-*Последнее обновление: 01.01.2026*
+*Last update: 02.01.2026*
