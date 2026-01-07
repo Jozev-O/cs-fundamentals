@@ -73,6 +73,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph (Directed)", "Graph (
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph (Directed).Tests", "Graph (Directed).Tests\Graph (Directed).Tests.csproj", "{C221E7A1-D422-4EA2-8FBA-7E8425D83030}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weighted Graph", "Weighted Graph\Weighted Graph.csproj", "{CF9414B0-81C1-4CFD-9D51-A872FCB1BCA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weighted Graph.Tests", "Weighted Graph.Tests\Weighted Graph.Tests.csproj", "{ABD2DDE3-1B0F-4F68-824D-00CF99AF78F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +223,14 @@ Global
 		{C221E7A1-D422-4EA2-8FBA-7E8425D83030}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C221E7A1-D422-4EA2-8FBA-7E8425D83030}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C221E7A1-D422-4EA2-8FBA-7E8425D83030}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF9414B0-81C1-4CFD-9D51-A872FCB1BCA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF9414B0-81C1-4CFD-9D51-A872FCB1BCA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF9414B0-81C1-4CFD-9D51-A872FCB1BCA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF9414B0-81C1-4CFD-9D51-A872FCB1BCA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD2DDE3-1B0F-4F68-824D-00CF99AF78F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD2DDE3-1B0F-4F68-824D-00CF99AF78F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD2DDE3-1B0F-4F68-824D-00CF99AF78F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD2DDE3-1B0F-4F68-824D-00CF99AF78F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

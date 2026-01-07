@@ -29,7 +29,7 @@ Practical implementation of fundamental data structures, algorithms, and design 
 - [x] Hash Set
 - [x] Graph (Undirected)
 - [x] Graph (Directed)
-- [ ] Weighted Graph
+- [x] Weighted Graph
 - [ ] Adjacency List
 - [ ] Adjacency Matrix
 - [ ] Disjoint Set (Union-Find)
@@ -141,10 +141,10 @@ Practical implementation of fundamental data structures, algorithms, and design 
 
 ## Progress statistics
 
-**Overall progress:** 17/124 (13,71%)
+**Overall progress:** 18/124 (14,52%)
 
 **Categories:**
-- Data Structures: 17/38 (44,74%)
+- Data Structures: 18/38 (47,37%)
 - Algorithms: 0/53 (0,00%)
 - Design Patterns: 0/33 (0,00%)
 
