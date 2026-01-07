@@ -31,7 +31,7 @@ Practical implementation of fundamental data structures, algorithms, and design 
 - [x] Graph (Directed)
 - [x] Weighted Graph
 - [ ] Adjacency List
-- [ ] Adjacency Matrix
+- [x] Adjacency Matrix
 - [ ] Disjoint Set (Union-Find)
 - [ ] Bloom Filter
 - [ ] Skip List
@@ -141,10 +141,10 @@ Practical implementation of fundamental data structures, algorithms, and design 
 
 ## Progress statistics
 
-**Overall progress:** 18/124 (14,52%)
+**Overall progress:** 19/124 (15,32%)
 
 **Categories:**
-- Data Structures: 18/38 (47,37%)
+- Data Structures: 19/38 (50,00%)
 - Algorithms: 0/53 (0,00%)
 - Design Patterns: 0/33 (0,00%)
 

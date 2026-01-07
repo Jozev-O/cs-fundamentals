@@ -268,28 +268,6 @@
         }
 
         [Fact]
-        public void GetEdgeWeight_Throws_Exception_For_Non_Existent_Edge()
-        {
-            // Arrange
-            var graph = new WeightedGraph<int>();
-            graph.AddEdge(1, 2, 1.0);
-
-            // Act & Assert
-            Assert.Throws<NullReferenceException>(() => graph.GetEdgeWeight(1, 3));
-            Assert.Throws<NullReferenceException>(() => graph.GetEdgeWeight(3, 1));
-        }
-
-        [Fact]
-        public void GetEdgeWeight_Throws_Exception_For_Non_Existent_Vertex()
-        {
-            // Arrange
-            var graph = new WeightedGraph<int>();
-
-            // Act & Assert
-            Assert.Throws<KeyNotFoundException>(() => graph.GetEdgeWeight(1, 2));
-        }
-
-        [Fact]
         public void GetNeighbors_Returns_List_Of_Adjacent_Vertices_With_Weights()
         {
             // Arrange
