@@ -69,6 +69,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph (Undirected)", "Graph
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph (Undirected).Tests", "Graph (Undirected).Tests\Graph (Undirected).Tests.csproj", "{3846CA57-ED3A-40A7-92D2-23F0FB6C78BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph (Directed)", "Graph (Directed)\Graph (Directed).csproj", "{21456566-6AF4-46F6-918D-FFC3F16787C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph (Directed).Tests", "Graph (Directed).Tests\Graph (Directed).Tests.csproj", "{C221E7A1-D422-4EA2-8FBA-7E8425D83030}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +211,14 @@ Global
 		{3846CA57-ED3A-40A7-92D2-23F0FB6C78BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3846CA57-ED3A-40A7-92D2-23F0FB6C78BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3846CA57-ED3A-40A7-92D2-23F0FB6C78BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21456566-6AF4-46F6-918D-FFC3F16787C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21456566-6AF4-46F6-918D-FFC3F16787C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21456566-6AF4-46F6-918D-FFC3F16787C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21456566-6AF4-46F6-918D-FFC3F16787C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C221E7A1-D422-4EA2-8FBA-7E8425D83030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C221E7A1-D422-4EA2-8FBA-7E8425D83030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C221E7A1-D422-4EA2-8FBA-7E8425D83030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C221E7A1-D422-4EA2-8FBA-7E8425D83030}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
