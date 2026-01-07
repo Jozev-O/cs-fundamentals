@@ -27,7 +27,7 @@ Practical implementation of fundamental data structures, algorithms, and design 
 - [x] Hash Table (with Chaining)
 - [ ] Hash Table (with Open Addressing: Linear Probing, Quadratic Probing, Double Hashing)
 - [x] Hash Set
-- [ ] Graph (Undirected)
+- [x] Graph (Undirected)
 - [ ] Graph (Directed)
 - [ ] Weighted Graph
 - [ ] Adjacency List
@@ -141,14 +141,14 @@ Practical implementation of fundamental data structures, algorithms, and design 
 
 ## Progress statistics
 
-**Overall progress:** 15/124 (12,10%)
+**Overall progress:** 16/124 (12,90%)
 
 **Categories:**
-- Data Structures: 15/38 (39,47%)
+- Data Structures: 16/38 (42,11%)
 - Algorithms: 0/53 (0,00%)
 - Design Patterns: 0/33 (0,00%)
 
 
 ---
 
-*Last update: 02.01.2026*
+*Last update: 07.01.2026*
