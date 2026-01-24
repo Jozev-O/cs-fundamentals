@@ -81,6 +81,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjacencyMatrixGraph", "Adj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjacencyMatrixGraph.Tests", "AdjacencyMatrixGraph.Tests\AdjacencyMatrixGraph.Tests.csproj", "{7B7BE3D9-1354-4342-959F-32E5459FD89D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disjoint Set", "Disjoint Set\Disjoint Set.csproj", "{855F0A5A-C28C-47D6-B8EE-62F19331AF4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disjoint Set.Tests", "Disjoint Set.Tests\Disjoint Set.Tests.csproj", "{08962E1A-0749-4EE0-8E00-E64A77AC688D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +247,14 @@ Global
 		{7B7BE3D9-1354-4342-959F-32E5459FD89D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B7BE3D9-1354-4342-959F-32E5459FD89D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B7BE3D9-1354-4342-959F-32E5459FD89D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{855F0A5A-C28C-47D6-B8EE-62F19331AF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855F0A5A-C28C-47D6-B8EE-62F19331AF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855F0A5A-C28C-47D6-B8EE-62F19331AF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855F0A5A-C28C-47D6-B8EE-62F19331AF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08962E1A-0749-4EE0-8E00-E64A77AC688D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08962E1A-0749-4EE0-8E00-E64A77AC688D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08962E1A-0749-4EE0-8E00-E64A77AC688D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08962E1A-0749-4EE0-8E00-E64A77AC688D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
