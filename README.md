@@ -33,7 +33,7 @@ Practical implementation of fundamental data structures, algorithms, and design 
 - [ ] Adjacency List
 - [x] Adjacency Matrix
 - [x] Disjoint Set (Union-Find)
-- [ ] Bloom Filter
+- [x] Bloom Filter
 - [ ] Skip List
 - [ ] Segment Tree
 - [ ] Fenwick Tree (Binary Indexed Tree)
@@ -141,14 +141,14 @@ Practical implementation of fundamental data structures, algorithms, and design 
 
 ## Progress statistics
 
-**Overall progress:** 20/124 (16,13%)
+**Overall progress:** 21/124 (16,94%)
 
 **Categories:**
-- Data Structures: 20/38 (52,63%)
+- Data Structures: 21/38 (55,26%)
 - Algorithms: 0/53 (0,00%)
 - Design Patterns: 0/33 (0,00%)
 
 
 ---
 
-*Last update: 24.01.2026*
+*Last update: 14.03.2026*
