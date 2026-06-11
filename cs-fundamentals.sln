@@ -89,6 +89,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloom Filter", "Bloom Filte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloom Filter.Tests", "Bloom Filter.Tests\Bloom Filter.Tests.csproj", "{FA54EF4B-D01D-457B-A291-BF79BBBCC5BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkipList", "SkipList\SkipList.csproj", "{5388EDC4-DA4C-41EC-ADD4-82B76B81B507}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,10 @@ Global
 		{FA54EF4B-D01D-457B-A291-BF79BBBCC5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA54EF4B-D01D-457B-A291-BF79BBBCC5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA54EF4B-D01D-457B-A291-BF79BBBCC5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5388EDC4-DA4C-41EC-ADD4-82B76B81B507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5388EDC4-DA4C-41EC-ADD4-82B76B81B507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5388EDC4-DA4C-41EC-ADD4-82B76B81B507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5388EDC4-DA4C-41EC-ADD4-82B76B81B507}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

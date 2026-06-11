@@ -6,34 +6,34 @@ Practical implementation of fundamental data structures, algorithms, and design 
 
 ### Data Structures
 
-- [x] Linked List (Singly Linked List)
-- [x] Doubly Linked List
-- [x] Circular Linked List
-- [x] Stack
-- [x] Queue
-- [x] Circular Queue
-- [x] Priority Queue
-- [x] Deque (Double-Ended Queue)
-- [x] Binary Tree
-- [x] Binary Search Tree (BST)
-- [x] AVL Tree
+- [ ] Linked List (Singly Linked List)
+- [ ] Doubly Linked List
+- [ ] Circular Linked List
+- [ ] Stack
+- [ ] Queue
+- [ ] Circular Queue
+- [ ] Priority Queue
+- [ ] Deque (Double-Ended Queue)
+- [ ] Binary Tree
+- [ ] Binary Search Tree (BST)
+- [ ] AVL Tree
 - [ ] Red-Black Tree
 - [ ] B-Tree
 - [ ] B+ Tree
-- [x] Heap (Binary Heap, Min-Heap, Max-Heap)
+- [ ] Heap (Binary Heap, Min-Heap, Max-Heap)
 - [ ] Fibonacci Heap
 - [ ] Trie (Prefix Tree)
 - [ ] Suffix Tree
-- [x] Hash Table (with Chaining)
+- [ ] Hash Table (with Chaining)
 - [ ] Hash Table (with Open Addressing: Linear Probing, Quadratic Probing, Double Hashing)
-- [x] Hash Set
-- [x] Graph (Undirected)
-- [x] Graph (Directed)
-- [x] Weighted Graph
+- [ ] Hash Set
+- [ ] Graph (Undirected)
+- [ ] Graph (Directed)
+- [ ] Weighted Graph
 - [ ] Adjacency List
-- [x] Adjacency Matrix
-- [x] Disjoint Set (Union-Find)
-- [x] Bloom Filter
+- [ ] Adjacency Matrix
+- [ ] Disjoint Set (Union-Find)
+- [ ] Bloom Filter
 - [ ] Skip List
 - [ ] Segment Tree
 - [ ] Fenwick Tree (Binary Indexed Tree)
@@ -43,7 +43,7 @@ Practical implementation of fundamental data structures, algorithms, and design 
 - [ ] Rope (for strings)
 - [ ] Circular Buffer
 - [ ] LRU Cache
-- [x] Frame
+- [ ] Frame
 
 ### Algorithms
 
@@ -141,14 +141,14 @@ Practical implementation of fundamental data structures, algorithms, and design 
 
 ## Progress statistics
 
-**Overall progress:** 21/124 (16,94%)
+**Overall progress:** 0/124 (0,00%)
 
 **Categories:**
-- Data Structures: 21/38 (55,26%)
+- Data Structures: 0/38 (0,00%)
 - Algorithms: 0/53 (0,00%)
 - Design Patterns: 0/33 (0,00%)
 
 
 ---
 
-*Last update: 14.03.2026*
+*Last update: 12.06.2026*

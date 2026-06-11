@@ -337,3 +337,11 @@ FodyWeavers.xsd
 
 # VS Code files
 .vscode/
+
+# Claude Code (teacher-mode setup is local-only)
+.claude/
+CLAUDE.md
+
+# graphify knowledge graph outputs and temp files
+graphify-out/
+.graphify*
